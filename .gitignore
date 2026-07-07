@@ -1,0 +1,103 @@
+# ##############################################################################
+# OpoKiller - Professional & Optimized .gitignore
+# ##############################################################################
+
+# ==============================================================================
+# 1. Dependency Directories
+# ==============================================================================
+# External packages downloaded via package managers should not be versioned.
+node_modules/
+jspm_packages/
+web_modules/
+
+# ==============================================================================
+# 2. Build & Production Outputs
+# ==============================================================================
+# Compiled code and build output folders (Vite, Electron, Electron-builder).
+dist/
+dist-ssr/
+dist-electron/
+out/
+build/
+bin/
+obj/
+
+# ==============================================================================
+# 3. Cache & Diagnostic Files
+# ==============================================================================
+# Intermediate compile caches and tool states to speed up rebuilds locally.
+.npm/
+.eslintcache
+.vite/
+.vitest/
+.parcel-cache/
+.cache/
+*.tsbuildinfo
+.pnp/
+.pnp.js
+
+# ==============================================================================
+# 4. Testing & Coverage
+# ==============================================================================
+# Reports and metrics generated during automated tests execution.
+coverage/
+*.lcov
+.nyc_output/
+
+# ==============================================================================
+# 5. Environment & Sensitive Configuration
+# ==============================================================================
+# Local environment configs, certificates, and credentials.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ==============================================================================
+# 6. Operating System & System-Specific Files
+# ==============================================================================
+# Files created automatically by macOS or Windows.
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==============================================================================
+# 7. IDEs, Editors & Developer Tools
+# ==============================================================================
+# IDE-specific configurations that shouldn't be shared unless team-approved.
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ IDEA, etc.)
+.idea/
+
+# Sublime Text / Atom
+*.sublime-project
+*.sublime-workspace
+
+# Claude Code / Assistant state (keep launch configurations if present)
+.claude/*
+!.claude/launch.json
+
+# ==============================================================================
+# 8. Logs
+# ==============================================================================
+# Execution logs and debug outputs.
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
